@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>CheckYourShoes</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li class="dropdown">
+                 <button class="bouton"><a href="Nouvelles sorties.html">Nouvelles sorties</a><span class="fleche">&#9660;</span></button>
+                 <div class="menu-content dropdown-content">
+                     <a href="Nike NOCTA Glide Drake White Chrome.html">Nike NOCTA Glide Drake White Chrome</a>
+                     <a href="Adidas Samba Deco SPZL Brown.html">Adidas Samba Deco SPZL Brown</a>
+                <li><a href="formu.html">Inscription/Connection</a></li>     
+             </ul>
+        </nav>
+    </header>
+    <div class="reduction">
+        <p class="reduction">-10% sur la première commande avec le code: IIM10 </p>
+    </div>
+    <div class="changeTheme">Mode Nuit</div>
+    <div class="message-error">
+        <ul class="message-error-list"></ul>
+    </div>
+    <div class="message-success">
+        Formulaire envoyé
+    </div>
+    <form action="" method="POST" enctype="multipart/form-data">
+        <div>
+            <label for="pseudo">Pseudo</label>
+            <input type="text" name="pseudo" id="pseudo">
+        </div>
+
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+        </div>
+
+        <div>
+            <label for="password">Mot de passe</label>
+            <input type="password" name="password" id="password">
+        </div>
+
+        <div>
+            <label for="password2">Entrer le mot de passe</label>
+            <input type="password2" name="password2" id="password2">
+        </div>
+
+        <button class="inscrire">S'inscrire</button>
+        <button class="connect">Se connecter</button>
+
+    </form>
+    <br>
+    <br>
+    <script src="main.js"></script>
+    <script src="fomu.js"></script>
+    <script src="sombre.js"></script>
+</body>
+</html>

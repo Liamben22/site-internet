@@ -1,0 +1,134 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(255, 255, 255);
+  background: var(--background);
+}
+  
+header {
+  background-image: url(../img/fond.png);
+  color: rgb(0, 0, 0);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 20px;
+  text-align: center;
+  color: var(--ecriture);
+  
+}   
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+  
+nav ul li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  color: var(--ecriture);
+  
+}
+
+.photos {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+}
+img {
+	width: 350px;
+	height: 250px;
+  margin-right: 20px;
+}
+.nom{
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: bolder;
+  color: var(--ecriture);
+}
+
+h2{
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  color: var(--ecriture);
+}
+.reduction{
+  color: rgb(255, 255, 255);
+  background-color: black;
+  background: var(--ecriture);
+  text-align: center;
+  color: var(--background);
+}
+p{
+  margin-top: 0;
+  margin-bottom: 0;
+  color: var(--ecriture);
+}
+@media screen and (max-width: 780px) {
+  .photos{
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+}
+.changeTheme {
+  cursor: pointer;
+  width: 150px;
+  height: 30px;
+  background: rgb(248, 223, 0);
+  color: var(--ecriture);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  border-radius: 5px;
+  margin-left: 45%;
+  margin-top: 40px;
+}
+
+:root {
+  --ecriture: #000000;
+  --background: #ffffff;
+  
+}
+
+.bouton {
+  border: #000000;
+  background-color: #ffffff;
+  font-size: 100%;
+  background: var(--background);
+}
+
+.fleche{
+  color: #000000;
+  color:var(--ecriture);
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #696969;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
